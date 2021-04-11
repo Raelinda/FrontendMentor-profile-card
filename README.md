@@ -13,7 +13,7 @@ My images are in a file called "images" so the path I used was </images/my-cool-
 I googled and tried a bunch of different things until I arrived at this solution: 
 Adjust all image paths one level down. For example: Change </images/my-cool-image.jpg> to <images/my-cool-image.jpg>.
 
-Since this would screw things up on my local repo the only solution I can think of is to create a branch with the adjusted image paths to put on github pathes.  Kind of annoying and inelegant. 
+Since this would screw things up on my local repo the only solution I can think of is to create a branch with the adjusted image paths to put on github pages.  Kind of annoying and inelegant. 
 
 If someone has a better solution, sing out.
 
