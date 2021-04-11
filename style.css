@@ -1,23 +1,19 @@
 /*==========
 fonts
 ============ */
-/* big-shoulders-display-700 - latin */
+/* kumbh-sans-regular - latin */
 @font-face {
-  src: url('../fonts/big-shoulders-display-v4-latin-700.woff');
-  font-family: 'Big Shoulders Display';
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  src: url('../fonts/lexend-deca-v7-latin-regular.eot');
-  /* IE9 Compat Modes */
-  src: local(''),
-    url('../fonts/lexend-deca-v7-latin-regular.woff') format('woff');
-  font-family: 'Lexend Deca';
+  font-family: 'Kumbh Sans';
   font-style: normal;
   font-weight: 400;
+  src: url('../fonts/kumbh-sans-v5-latin-regular.woff');
 }
+/* kumbh-sans-700 - latin */
+@font-face {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/kumbh-sans-v5-latin-700.woff'); }
 
 /*==========
 Body basics
