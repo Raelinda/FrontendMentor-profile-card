@@ -1,0 +1,122 @@
+/*==========
+fonts
+============ */
+/* big-shoulders-display-700 - latin */
+@font-face {
+  src: url('../fonts/big-shoulders-display-v4-latin-700.woff');
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('../fonts/lexend-deca-v7-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/lexend-deca-v7-latin-regular.woff') format('woff');
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*==========
+Body basics
+============ */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  /*  (primary) */
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  font-size: 16px;
+}
+body {
+  background: var(--Dark-cyan);
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 0;
+  color: var(--Very-dark-desaturated-blue);
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+/* Typography
+============= */
+.lighter { font-weight: 400; color: var(--Dark-gray);
+}
+/* Layout
+============= */
+
+.top, .bottom {
+  position: absolute;
+  z-index: -9;
+}
+.top {
+  bottom: 40vh;
+  right: 40vw;
+}
+.bottom {
+  top: 40vh;
+  left: 40vw;
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  position: relative;
+  width: min(80%, 350px);
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  padding: 0;
+  box-shadow: 0 0 30px -8px var(--Dark-grayish-blue);
+}
+.card__top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 6rem 0;
+}
+.card__background {
+  border-radius: 15px 15px 0 0;
+  width: min(100%, 100%);
+  height: 125px;
+  position: absolute;
+  top: 0;
+}
+.profile__photo {
+  display: block;
+  position: absolute;
+  top: 75px;
+  border: 4px solid white;
+  border-radius: 50%;
+
+}
+.profile__name-age {
+  margin-top: .5em;
+}
+.profile__location {
+  margin-top: .75em;
+}
+.card__stats {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--Dark-gray);
+  padding-top: 1em;
+margin: 1.75rem 0 1rem;
+}
