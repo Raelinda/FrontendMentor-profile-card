@@ -78,7 +78,7 @@ body {
 }
 .card {
   position: relative;
-  width: min(80%, 350px);
+  width: min(80%, 325px);
   margin: 0 auto;
   background: white;
   border-radius: 15px;
@@ -119,4 +119,28 @@ body {
   border-top: 1px solid var(--Dark-gray);
   padding-top: 1em;
 margin: 1.75rem 0 1rem;
+}
+/* Media Queries */
+@media screen and (min-width: 900px) {
+  .top {
+    bottom: 45vh;
+    right: 45vw;
+  }
+  .bottom {
+    top: 45vh;
+    left: 45vw;
+  }
+}
+@media screen and (min-width: 900px) {
+  .top, .bottom {
+    transform: scale(1.3);
+  }
+  .top {
+    bottom: 55vh;
+    right: 55vw;
+  }
+  .bottom {
+    top: 55vh;
+    left: 55vw;
+  }
 }
