@@ -102,6 +102,10 @@ body {
 
 .card__background {
   border-radius: 15px 15px 0 0;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> 70f9c1f91ae22f6338e97de132926bd1170c37ad
   height: 125px;
   object-fit: cover;
   position: absolute;
